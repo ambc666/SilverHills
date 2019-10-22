@@ -1,0 +1,201 @@
+*{
+    box-sizing: content-box; /*This is my standard accross all browsers*/
+    margin: 0;
+    padding: 0;
+    background-color: #55BD55;
+}
+.main-logo{
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+}
+.navbar-default .navbar-nav>li>a{ /******************************Navigation**********************************/
+    color: #fff;
+    border: 0.5px solid #fff;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Open Sans", "Roboto", sans-serif;
+    background-color: #990000;
+}
+.navbar-default .navbar-nav>li>a:hover{ /*****************My hover on normal nav***************/
+    color: #fff;
+    background-color: #003B00;
+}
+.dropdown-menu{ /*************This styles the actual Event box on the dropdown*****/
+    background-color: #990000;
+    border: 0.5px solid #fff;
+}
+.dropdown-menu>li>a:hover, /**********This changes my hover on the dropdown boxes to the dark green same as the normal nav***********/
+.dropdown-menu>li>a:focus, 
+.dropdown-menu > 
+.active > a:hover{ 
+    background-color: #003B00;
+}
+.dropdown-menu>li>a{ /********On clicking Events it styles the dropdown rows within the box******/
+    color: #fff;
+    background-color: #990000;
+    border: 0.5px solid #fff;
+}
+.dropdown-menu>li>a:hover, /*******This changes my text on the dropdown hover to white***/
+.dropdown-menu>li>a:focus{ 
+    color: #fff;
+}
+.caret { /******This colors the arrow on the Events menu***********/
+    color: #fff;
+    background-color: #990000; 
+}
+.navbar-nav>.dropdown>a:hover .caret{ /*******This colours the arrow on the Events menu when it is hovered ************/
+    color: #fff;
+    background-color: #003B00;
+}
+.navbar-nav li.dropdown.open > .dropdown-toggle, 
+.navbar-nav li.dropdown.active > .dropdown-toggle,
+.navbar-nav li.dropdown.open.active > .dropdown-toggle{ /*******This is the style for the Events button when it is clicked and hovering over the other options*****/
+  background-color: #003B00;
+  color: #fff;
+}
+/***************************Navigation End Here********************************/
+
+/******************************Header starts**********************************/
+.bannerimg{
+    margin-top: 80px;
+    margin-right: 300px;
+}
+/******************************Headings & Main body****************************/
+h2{ 
+    background-color: #990000;
+    font-family: "EB Garamond", serif;
+    font-weight: bold;
+    color: #fff;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    border: 0.5px solid #fff;  
+}
+body{
+    font-family: "Roboto", sans-serif;
+    color: #000;
+}
+.bg-1{
+    margin-bottom: 3em;
+}
+.googlemap{/*This is my map on about*/
+    width: 512px;
+    height: 256px;
+    margin-top: 4em;
+    border: 3px solid #fff;
+}
+.contactform{/*contact us form*/
+    border: 2px solid #fff;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.form-group{
+    margin-left: 5em;
+    margin-right: 5em;
+    background-color: #990000;
+    color: #fff;
+}
+.backform{
+    padding-top: 1em;
+    padding-bottom: 2em;
+    background-color: #990000;
+}
+.schoollist{ /*List on school page*/
+    display: inline-block;
+}
+.listtext{ 
+    text-align: left;
+}
+.staglist{/*List on the stag and hen page*/
+    display: inline-block;
+}
+.stagtext{
+    text-align: left;
+    font-weight: 700;
+}
+.tripadvisoricon{/*About Styles*/
+    border: 3px double #fff;
+}
+.bg-5{/*Sizing for form message*/
+    margin-top: 5em;
+    margin-bottom: 15em;
+}
+/*********************************Images**********************************/
+.waterimg{
+    border: 1px solid #fff;
+}
+.landimg{
+    border: 1px solid #fff;
+}
+.bikehireimg{
+    border: 1px solid #fff;
+}
+/******************************Footer**********************************/
+.bg-3{ /* Footer*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #003B00;
+}
+.bg-4{
+    background-color: #003B00;
+    padding-bottom: 30px;
+}
+.footer-text{
+    color: #fff;
+    background-color: #003B00;
+}
+.socialicons{
+    padding: 1px;
+    margin-top: 20px;
+    background-color: #003B00;
+    font-family: "Open Sans", "Roboto", sans-serif;
+    border: 0.25px solid #fff;
+}
+.footerline{
+    border: 0.25px solid #fff;
+}
+/*******************900px Break Point for Nav and banner issues**************/
+
+@media screen and (max-width: 900px){
+    .main-logo{
+        visibility: hidden;
+    }
+    .navbar-default .navbar-nav>li>a{
+        font-size: 12px;
+    }
+    .bannerimg{
+        margin-right: 150px;
+    }
+}
+/*******************************Tablet CSS*******************************/
+@media screen and (max-width: 768px){ 
+    .main-logo{
+        visibility: hidden;
+    }
+    .bannerimg{
+        margin-right: inherit;
+    }
+    .bikehireimg{
+        width: 75%;
+    }
+}
+/*******************************Mobile CSS*******************************/
+
+@media screen and (max-width: 480px){ 
+    .main-logo{
+        visibility: hidden;
+    }
+    .bannerimg{
+        margin-top: 40px;
+        margin-right: inherit;
+    }
+    .googlemap{
+        width: 50%;
+    }
+    .waterimg{
+    width: 75%;
+    }
+    .landimg{
+        width: 75%;
+    }
+}
